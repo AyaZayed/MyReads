@@ -1,0 +1,65 @@
+:root {
+  /* font stuff */
+  --font-size-basis: 1.1rem;
+  --type-scale: 1.3;
+  --h5: var(--font-size-basis);
+  --h4: calc(var(--h5) * var(--type-scale));
+  --h3: calc(var(--h4) * var(--type-scale));
+  --h2: calc(var(--h3) * var(--type-scale));
+  --h1: calc(var(--h2) * var(--type-scale));
+  --font-small: calc(0.667rem);
+  --font-family: 'Poppins', sans-serif;
+  --secondary-font-family: 'Satisfy', cursive;
+  /* colors */
+  --faded-red: hsl(8, 54%, 57%);
+  --faded-purple: hsl(292, 8%, 63%);
+  --faded-blue: hsl(211, 18%, 63%);
+  --faded-green: hsl(68, 42%, 52%);
+  --beige: hsl(38, 49%, 79%);
+  --background: hsl(36, 45%, 96%);
+  --faded-yellow: hsl(42, 99%, 70%);
+  --yellow: hsl(42, 99%, 54%);
+  --primary-color: var(--faded-red, hsl(8, 54%, 57%));
+  --secondary-color: var(--yellow, hsl(42, 99%, 70%));
+}
+
+html {
+  font-size: var(--font-size-basis);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-display: auto;
+}
+
+h1 {
+  font-size: var(--h1);
+}
+
+h2 {
+  font-size: var(--h2);
+}
+
+h3 {
+  font-size: var(--h3);
+}
+
+h4 {
+  font-size: var(--h4);
+}
+
+h5 {
+  font-size: var(--h5);
+}
+
+ul {
+  list-style: none;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: var(--secondary-color);
+}
+
+::selection {
+  color: #fff;
+  background-color: var(--secondary-color);
+}
